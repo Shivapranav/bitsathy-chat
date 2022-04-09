@@ -4,7 +4,7 @@ import "./Login.css";
 import {auth,provider} from "./firebase";
 import { useStateValue } from './StateProvider';
 import { actionTypes } from './reducer';
-
+import Header from "./Header"
 function Login() {
     const [{},dispatch]=useStateValue();
 
@@ -22,14 +22,15 @@ function Login() {
 
   return (
     <div className='login'>
+        <Header/>
         <div className="login__container">
-        <img
-            src="https://1000logos.net/wp-content/uploads/2021/04/WhatsApp-logo-768x432.png" alt=""/>
+        <img className="login__logo"
+            src="https://i.ibb.co/J3pkqQj/bitsathy-chat.png" alt=""/>
     <div className="login__text">
-        <h1>Sign in to random-connections</h1>
+        <p>Welcome to Bitsathy Chat!</p>
     </div>
     <Button onClick={signIn}>
-        Sign In With Google
+        Login with Google
     </Button>
     </div>
     </div>

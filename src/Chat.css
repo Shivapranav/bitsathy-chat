@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
 }
+.chat__body::-webkit-scrollbar { width: 0 !important }
 
 .chat__header{
     padding: 20px;
@@ -74,6 +75,9 @@
     align-items: center;
     height: 62px;
     border-top: 1px solid lightgray;
+    margin-left: 20px;
+    margin-right: 20px;
+
 }
 
 .chat__footer>form{
@@ -91,3 +95,14 @@
 .chat__footer>form>button{
     display: none;
 }
+
+
+
+/* .chat::-webkit-scrollbar{
+    display: none;
+}
+
+.chat {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+} */

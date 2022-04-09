@@ -90,7 +90,7 @@ function Chat() {
       </div>
 
       <div className='chat__footer'>
-        <InsertEmoticonIcon/>
+        {/* <InsertEmoticonIcon/> */}
         <form>
             <input 
             value={input}
@@ -100,7 +100,7 @@ function Chat() {
             <button onClick={sendMessage}
             type="submit">Send a message</button>
         </form>
-        <MicIcon/>
+        {/* <MicIcon/> */}
       </div>
     </div>
     ); 
